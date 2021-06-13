@@ -51,13 +51,18 @@ Create an object and set the 'settings' prop as the object as shown above.
 
 The mandatory syntax for the object: 
 
-{
+```jsx
+const settings = {
+  /* Card Wrapper Properties here */
   card : {
+    /* Card Properties here */
     spacing: {
 
     }
   }
 }
+
+```
 
 Above the card object we have the settings for the Card Wrapper (Cards). You can pass in: 
 
