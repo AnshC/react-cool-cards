@@ -15,7 +15,7 @@ npm install --save react-cool-cards
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-cool-cards'
+import { Card, Cards } from 'react-cool-cards'
 import 'react-cool-cards/dist/index.css'
 
 function Example(){
