@@ -71,6 +71,7 @@ function Card({ children, settings }) {
     if (settings.theme !== undefined) {
       setAnimation(settings.theme.animation)
       setThemeColor(settings.theme.color)
+      setThemeBg(themeColor)
       setThemeFill(settings.theme.fill)
       if (
         settings.theme.type === undefined ||
@@ -107,8 +108,6 @@ function Card({ children, settings }) {
         } else if (themefill === 'solid') {
           setThemeBg('#27272b')
         }
-      } else {
-        setThemeBg(themeColor)
       }
     }
   })
