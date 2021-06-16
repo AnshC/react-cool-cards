@@ -87,7 +87,7 @@ The Cards Wrapper Component acts as a div in form of a row.
 | margin               | value of margin e.g. 15px      | sets the margin between cards                                                                                               |
 | shadow               | boolean e.g. true              | sets a default shadow to override this shadow, set the 'style' prop to custom and define it in CSS                          |
 | overflow             | value for overflow e.g. hidden | sets the overflow in the card.                                                                                              |
-|----------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+
 | Theme property  name | options                        | description                                                                                                                 |
 |----------------------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | color                | 'red', 'blue', 'green', 'dark' | sets the theme color of the card                                                                                            |
@@ -96,6 +96,7 @@ The Cards Wrapper Component acts as a div in form of a row.
 | animation            | 'grow', 'shrink', 'rotate'     | sets different types of pre-made animations to the cards                                                                    |
 
 Make sure you've defined 'theme' as an object in the settings prop as shown below.
+
 
 ```jsx
 const App = () => {
@@ -154,7 +155,7 @@ To define every card's style and theme, you need to pass in a prop called 'setti
 
 This is useful as you don't have to keep passing in a settings object to each card. 
 
-While you use the <code>common<code> prop and you want to style a custom card you can pass the <code>settings</code> of the Card with a custom object as shown below
+While you use the <code>common</code> prop and you want to style a custom card you can pass the <code>settings</code> of the Card with a custom object as shown below
 
 ```jsx
 
