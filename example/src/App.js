@@ -12,18 +12,19 @@ const App = () => {
       spacing: {
         margin: '10px'
       },
-      color: 'red',
+      color: 'orange',
       width: '300px',
-      maxWidth: '300px',
+      maxWidth: '500px',
       height: '300px'
     }
   }
   return (
       <div>
       <Cards settings={settings}>
-        <Card settings={settings}>This is a card</Card>
-        <Card settings={settings}>This is also a card</Card>
-        <Card settings={settings}>This one too</Card>
+          <Card settings={settings}></Card>
+          <Card settings={settings}></Card>
+          <Card settings={settings}></Card>
+          <Card settings={settings}></Card>
       </Cards>
       </div>
   )
