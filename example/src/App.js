@@ -2,29 +2,53 @@ import React from 'react'
 import './App.css'
 
 import {Cards, Card} from 'react-cool-cards'
-import 'react-cool-cards/dist/index.css'
 
 const App = () => {
+
   const settings = {
-    background: 'transparent',
-    padding: '100px',
-    card : {
-      spacing: {
-        margin: '10px'
-      },
-      color: 'orange',
-      width: '300px',
-      maxWidth: '500px',
-      height: '300px'
+    width: '300px',
+    maxWidth: '500px',
+    height: '300px',
+    maxHeight: '300px',
+    margin: '30px',
+    shadow: true,
+    theme : {
+      color: 'red',
+      type: 'rounded',
+      fill: 'gradient',
+      animation: 'grow'
     }
   }
+
+  const custom = {
+    width: '200px',
+    height: '300px',
+    maxWidth: '200px',
+    margin: '30px',
+    shadow: true,
+    theme : {
+      color: '#FFaaFF',
+      animation: 'rotate'
+    }
+  }
+
   return (
       <div>
-      <Cards settings={settings}>
-          <Card settings={settings}></Card>
-          <Card settings={settings}></Card>
-          <Card settings={settings}></Card>
-          <Card settings={settings}></Card>
+      <Cards paddingSide={'100px'} common={settings}>
+        <Card />
+        <Card settings={custom} />
+      </Cards>
+      <Cards paddingSide={'100px'} common={settings}>
+        <Card settings={custom} />
+        <Card />
+      </Cards>
+      <Cards paddingSide={'100px'} common={settings}>
+        <Card />
+        <Card settings={custom} />
+      </Cards>
+      <Cards paddingSide={'100px'} common={settings}>
+        <Card settings={custom} />
+        <Card />
       </Cards>
       </div>
   )
